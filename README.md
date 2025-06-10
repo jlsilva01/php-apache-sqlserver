@@ -1,4 +1,4 @@
-# Como configurar o USBWebserver para usar SQL Server 2022
+# Como configurar o USBWebServer para usar SQL Server 2022
 
 Este procedimento mostra como configurar o **USBWebserver** com **PHP 8.1.3** para conectar ao **SQL Server 2022** usando a extensão oficial `sqlsrv` da Microsoft.
 
