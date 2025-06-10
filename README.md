@@ -67,13 +67,13 @@ Na Aba `Settings`, você pode configurar a porta do Apache e o caminho da pasta 
 ## 📦 Passo 2 – Copiar as DLLs para o USBWebserver
 
 1. Copie os arquivos `.dll` para a pasta:
-   ```
-   C:\USBWebserver\php\ext\
-   ```
+    ```
+    C:\USBWebserver\php\ext\
+    ```
 
     Caso você tenha instalado o USBWebserver no disco C:\ na pasta USBWebServer, o caminho completo seria:
 
-```
+    ```
     .
     ├── apache2
     │   ├── bin
@@ -105,6 +105,7 @@ Na Aba `Settings`, você pode configurar a porta do Apache e o caminho da pasta 
 2. Copie também os arquivos `msodbcsql17.dll` e `msvc*` se forem exigidos, ou instale o [ODBC Driver 17 para SQL Server](https://learn.microsoft.com/pt-br/sql/connect/odbc/download-odbc-driver-for-sql-server).
 
 OBS: Caso você já tenha instalado o [SSMS (SQL Server Management Studio)](https://learn.microsoft.com/pt-br/ssms/install/install), este item já vai estar OK.
+
 ---
 
 ## ⚙️ Passo 3 – Ativar as extensões do SQL Server no `php.ini`
