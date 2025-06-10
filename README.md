@@ -33,7 +33,7 @@ Este procedimento mostra como configurar o **USBWebserver** com **PHP 8.1.3** pa
 
 ![alt text](assets/apache.png)
 
-Como não iremos usar o MySQL, você deixar ele parado:
+Como não iremos usar o MySQL, você pode parar o serviço:
 
 ![alt text](assets/mysql.png)
 
