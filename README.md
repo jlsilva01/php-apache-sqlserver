@@ -42,7 +42,7 @@ Na Aba `Settings`, você pode configurar a porta do Apache e o caminho da pasta 
 ![alt text](assets/settings.png)
 
 
-5. O diretório raiz (`root`) dos seus arquivos fica em:
+5. O diretório raiz (`root`) dos seus arquivos `*.php` fica em:
 
     ```
     C:\USBWebserver\root
