@@ -29,7 +29,7 @@ Este procedimento mostra como configurar o **USBWebserver** com **PHP 8.1.3** pa
 
 4. A interface principal será carregada. Verifique se o Apache e o PHP estão ativos.
 
-![alt text](assets\usbwebserver.png)
+![alt text](assets/usbwebserver.png)
 
 5. O diretório raiz dos seus arquivos fica em:
 
