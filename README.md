@@ -214,8 +214,7 @@ php -m
 Deverá aparecer uma lista similar a essa:
 
 ```
-PS C:\usbwebserver\php> .\php -m
-PHP Warning:  PHP Startup: Unable to load dynamic library 'php_gd2.dll' (tried: C:/usbwebserver\php\ext\php_gd2.dll (N├úo foi poss├¡vel encontrar o m├│dulo especificado), C:/usbwebserver\php\ext\php_php_gd2.dll.dll (N├úo foi poss├¡vel encontrar o m├│dulo especificado)) in Unknown on line 0
+C:\usbwebserver\php> .\php -m
 [PHP Modules]
 bcmath
 calendar
