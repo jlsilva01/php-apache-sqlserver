@@ -99,12 +99,11 @@ Na Aba `Settings`, você pode configurar a porta do Apache e o caminho da pasta 
     ├── root
     │   └── app
     └── settings
-```    
+    ```    
 
+2. Copie também os arquivos `msodbcsql17.dll` e `msvc*` se forem exigidos, ou instale o [ODBC Driver 17 para SQL Server](https://learn.microsoft.com/pt-br/sql/connect/odbc/download-odbc-driver-for-sql-server).   
 
-2. Copie também os arquivos `msodbcsql17.dll` e `msvc*` se forem exigidos, ou instale o [ODBC Driver 17 para SQL Server](https://learn.microsoft.com/pt-br/sql/connect/odbc/download-odbc-driver-for-sql-server).
-
-OBS: Caso você já tenha instalado o [SSMS (SQL Server Management Studio)](https://learn.microsoft.com/pt-br/ssms/install/install), este item já vai estar OK.
+OBS: Caso você já tenha instalado o [SSMS (SQL Server Management Studio)](https://learn.microsoft.com/pt-br/ssms/install/install), este item já vai estar OK.   
 
 ---
 
