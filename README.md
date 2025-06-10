@@ -27,7 +27,7 @@ Este procedimento mostra como configurar o **USBWebserver** com **PHP 8.1.3** pa
 
 3. Execute o arquivo `USBWebserver.exe`.
 
-4. A interface principal será carregada. Verifique se o Apache e o PHP estão ativos.
+4. A interface principal será carregada. Verifique se o Apache está ativo.
 
 ![alt text](assets/usbwebserver.png)
 
