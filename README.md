@@ -104,9 +104,10 @@ Na Aba `Settings`, você pode configurar a porta do Apache e o caminho da pasta 
 
 2. Copie também os arquivos `msodbcsql17.dll` e `msvc*` se forem exigidos, ou instale o [ODBC Driver 17 para SQL Server](https://learn.microsoft.com/pt-br/sql/connect/odbc/download-odbc-driver-for-sql-server).
 
+OBS: Caso você já tenha instalado o [SSMS (SQL Server Management Studio)](https://learn.microsoft.com/pt-br/ssms/install/install), este item já vai estar OK.
 ---
 
-## ⚙️ Passo 3 – Ativar as extensões no `php.ini`
+## ⚙️ Passo 3 – Ativar as extensões do SQL Server no `php.ini`
 
 1. Edite o arquivo:
    ```
@@ -114,7 +115,16 @@ Na Aba `Settings`, você pode configurar a porta do Apache e o caminho da pasta 
    ```
 
 2. Adicione as linhas abaixo ao final da seção de extensões:
-   ```ini
+
+    ```
+    extension=php_sqlsrv_81_ts_x86.dll
+    extension=php_pdo_sqlsrv_81_ts_x86.dll
+    ```
+
+    No `php.ini` vai ficar mais ou menos parecido com isso:
+
+
+    ```ini
     ; Windows Extensions
     ; Note that ODBC support is built in, so no dll is needed for it.
     ; Note that many DLL files are located in the extensions/ (PHP 4) ext/ (PHP 5+)
@@ -201,8 +211,89 @@ cd C:\usbwebserver\php
 php -m
 ```
 
+Deverá aparecer uma lista similar a essa:
+
+```
+PS C:\usbwebserver\php> .\php -m
+PHP Warning:  PHP Startup: Unable to load dynamic library 'php_gd2.dll' (tried: C:/usbwebserver\php\ext\php_gd2.dll (N├úo foi poss├¡vel encontrar o m├│dulo especificado), C:/usbwebserver\php\ext\php_php_gd2.dll.dll (N├úo foi poss├¡vel encontrar o m├│dulo especificado)) in Unknown on line 0
+[PHP Modules]
+bcmath
+calendar
+Core
+ctype
+curl
+date
+dom
+exif
+filter
+hash
+iconv
+imap
+json
+libxml
+mbstring
+mysqli
+mysqlnd
+openssl
+pcre
+PDO
+pdo_mysql
+pdo_pgsql
+pdo_sqlite
+pdo_sqlsrv  <=== VALIDAR AQUI
+Phar
+readline
+Reflection
+session
+SimpleXML
+soap
+sockets
+SPL
+sqlite3
+sqlsrv      <=== E AQUI
+standard
+tidy
+tokenizer
+xml
+xmlreader
+xmlwriter
+zip
+zlib
+
+[Zend Modules]
+```
+
 Se não aparecer sqlsrv ou der erro como "Unable to load dynamic library", significa que:
 
 - O `.dll` está corrompido
-- Está na arquitetura errada (ex: você pegou `x64` em vez de `x86`)
+- Está na arquitetura errada (ex: você pegou `x64` em vez de `x86` ou vice-versa)
 - Faltam dependências do sistema (como ODBC 17)
+
+## 🧩 BÔNUS: Criando uma instância SQL Server (Docker ou Azure)
+
+Você pode utilizar uma instância SQL Server local com Docker ou criar uma instância na nuvem via Azure utilizando o repositório [`jlsilva01/sql-azure`](https://github.com/jlsilva01/sql-azure).
+
+---
+
+### 🔹 Opção 1: SQL Server local com Docker (Windows)
+
+> Requer o [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado e em execução no Windows.
+
+Execute o comando abaixo para criar um contêiner com SQL Server 2022:
+
+```bash
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Str0ng!Passw0rd" -p 1433:1433 --name sqlserver2022 -d mcr.microsoft.com/mssql/server:2022-latest
+```
+
+📌 Parâmetros de conexão padrão:
+
+Servidor: localhost
+Porta: 1433
+Usuário: sa
+Senha: Str0ng!Passw0rd
+
+Você pode conectar ao servidor SQL Server criado pelo docker através do [SSMS (SQL Server Management Studio)](https://learn.microsoft.com/pt-br/ssms/install/install).
+
+ ### 🔹 Opção 2: SQL Server no Azure via Terraform
+
+Repositório: 🔗 [jlsilva01/sql-azure](https://github.com/jlsilva01/sql-azure)
