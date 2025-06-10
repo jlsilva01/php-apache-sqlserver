@@ -31,6 +31,17 @@ Este procedimento mostra como configurar o **USBWebserver** com **PHP 8.1.3** pa
 
 ![alt text](assets/usbwebserver.png)
 
+![alt text](assets/apache.png)
+
+Como não iremos usar o MySQL, você deixar ele parado:
+
+![alt text](assets/mysql.png)
+
+Na Aba Settings, você pode configurar a porta do Apache e o caminho da pasta raiz do seu projeto PHP.
+
+![alt text](assets/settings.png)
+
+
 5. O diretório raiz dos seus arquivos fica em:
 
     ```
