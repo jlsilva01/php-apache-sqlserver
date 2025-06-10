@@ -68,11 +68,12 @@ Na Aba `Settings`, você pode configurar a porta do Apache e o caminho da pasta 
 
 1. Copie os arquivos `.dll` para a pasta:
    ```
-   USBWebserver\php\ext\
+   C:\USBWebserver\php\ext\
    ```
 
     Caso você tenha instalado o USBWebserver no disco C:\ na pasta USBWebServer, o caminho completo seria:
 
+```
     .
     ├── apache2
     │   ├── bin
@@ -98,7 +99,7 @@ Na Aba `Settings`, você pode configurar a porta do Apache e o caminho da pasta 
     ├── root
     │   └── app
     └── settings
-    
+```    
 
 
 2. Copie também os arquivos `msodbcsql17.dll` e `msvc*` se forem exigidos, ou instale o [ODBC Driver 17 para SQL Server](https://learn.microsoft.com/pt-br/sql/connect/odbc/download-odbc-driver-for-sql-server).
