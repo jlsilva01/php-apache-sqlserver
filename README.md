@@ -51,9 +51,7 @@ Na Aba `Settings`, você pode configurar a porta do Apache e o caminho da pasta 
 
 6. Para acessar seus arquivos no navegador, use:
 
-    ```
-    http://localhost/
-    ```
+    🔗 [http://localhost/](http://localhost/)
 
 
 ---
