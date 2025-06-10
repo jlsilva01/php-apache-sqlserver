@@ -59,7 +59,7 @@ Na Aba `Settings`, você pode configurar a porta do Apache e o caminho da pasta 
 ## 📁 Passo 1 – Baixar as extensões do SQLSRV
 
 1. Acesse: https://learn.microsoft.com/pt-br/sql/connect/php/download-drivers-php-sql-server
-2. Baixe o arquivo `.zip` com várias DLLs com diferentes versões do PHP.
+2. Baixe o arquivo `.zip` que contém vários arquivos DLLs com diferentes versões do PHP.
 2. Baixe o driver correspondente à versão do seu PHP (ex: `8.1` **Thread Safe**, x86).
    - Nome dos arquivos: `php_sqlsrv_81_ts.dll` e `php_pdo_sqlsrv_81_ts.dll`
 
