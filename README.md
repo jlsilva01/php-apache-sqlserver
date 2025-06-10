@@ -287,13 +287,15 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Str0ng!Passw0rd" -p 1433:1433 --na
 
 📌 Parâmetros de conexão padrão:
 
-Servidor: localhost
-Porta: 1433
-Usuário: sa
-Senha: Str0ng!Passw0rd
+- Servidor: `localhost`
+- Porta: `1433`
+- Usuário: `sa`
+- Senha: `Str0ng!Passw0rd`
 
 Você pode conectar ao servidor SQL Server criado pelo docker através do [SSMS (SQL Server Management Studio)](https://learn.microsoft.com/pt-br/ssms/install/install).
 
  ### 🔹 Opção 2: SQL Server no Azure via Terraform
 
 Repositório: 🔗 [jlsilva01/sql-azure](https://github.com/jlsilva01/sql-azure)
+
+> Com essa opção voce poderá ter uma instância do Azure SQL através de uma assinatura gratuita na Azure (Microsoft Learn Sandbox) - Sem cartão de crédito - com duração de 4 horas.
