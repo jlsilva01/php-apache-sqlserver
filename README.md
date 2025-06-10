@@ -263,7 +263,7 @@ zlib
 [Zend Modules]
 ```
 
-Se não aparecer sqlsrv ou der erro como "Unable to load dynamic library", significa que:
+Se não aparecer `sqlsrv` e `pdo_sqlsrv` ou der erro como "Unable to load dynamic library", significa que:
 
 - O `.dll` está corrompido
 - Está na arquitetura errada (ex: você pegou `x64` em vez de `x86` ou vice-versa)
