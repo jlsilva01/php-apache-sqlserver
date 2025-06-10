@@ -268,6 +268,7 @@ Se não aparecer sqlsrv ou der erro como "Unable to load dynamic library", signi
 - Está na arquitetura errada (ex: você pegou `x64` em vez de `x86` ou vice-versa)
 - Faltam dependências do sistema (como ODBC 17)
 
+
 ## 🧩 BÔNUS: Criando uma instância SQL Server (Docker ou Azure)
 
 Você pode utilizar uma instância SQL Server local com Docker ou criar uma instância na nuvem via Azure utilizando o repositório [`jlsilva01/sql-azure`](https://github.com/jlsilva01/sql-azure).
@@ -297,4 +298,4 @@ Você pode conectar ao servidor SQL Server criado pelo docker através do [SSMS 
 
 Repositório: 🔗 [jlsilva01/sql-azure](https://github.com/jlsilva01/sql-azure)
 
-> Com essa opção voce poderá ter uma instância do Azure SQL através de uma assinatura gratuita na Azure (Microsoft Learn Sandbox) - Sem cartão de crédito - com duração de 4 horas.
+> Com essa opção você pode criar uma instância do Azure SQL através de uma assinatura gratuita na Azure (Microsoft Learn Sandbox) - Sem cartão de crédito - com duração de 4 horas.
